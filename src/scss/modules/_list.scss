@@ -1,27 +1,26 @@
-.list li {
-  padding-left: 16px;
-  position: relative;
+.checked {
+  text-decoration: line-through;
+}
 
-  &:before {
-    @include centered(0, 50%);
-    content: '';
-    width: 4px;
-    height: 4px;
-    border-radius: $radius-circle;
-    background-color: $dark-color;
+.list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+
+  input {
+    width: 10%;
+  }
+
+  p {
+    width: 80%;
+  }
+
+  button {
+    height: 20px;
   }
 }
 
-.list-inline {
-  font-size: 0;
-
-  li {
-    display: inline-block;
-    margin-right: 16px;
-    font-size: $font-size-base;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+.del {
+  text-decoration: line-through;
 }

@@ -1,5 +1,28 @@
 {% extends 'layout/_main.html' %}
 
 {% block content %}
-<main>abc</main>
+<main class="tasker">
+  <header>
+    <h1>Todos App</h1>
+  </header>
+
+  <div class="todo">
+    <input type="text" value="" class="input-task" placeholder="What needs to do">
+    <input type="checkbox" class="check-all">
+  </div>
+
+  <div id="result">
+  </div>
+
+  <footer>
+    <ul>
+      <li class="count"></li>
+      <li>item left</li>
+      <li class="btn all">All</li>
+      <li class="btn act">ACTIVE</li>
+      <li class="btn comp">COMPLETED</li>
+      <li class="btn clear">Clear Completed</li>
+    </ul>
+  </footer>
+</main>
 {% endblock %}
